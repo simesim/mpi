@@ -54,6 +54,14 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.key === "Escape") closeModal();
     });
 });
+
+if (window.innerWidth <= 768) {
+    const reviewSwiper = document.querySelector('.reviews-swiper').swiper;
+    reviewSwiper.params.slidesPerView = 1;
+    reviewSwiper.params.centeredSlides = false;
+    reviewSwiper.update();
+}
+
 /* Треугольники анимация */
 const triangles = document.querySelector(".hero-triangles");
 
