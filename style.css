@@ -1,4 +1,3 @@
-/* GLOBAL */
 body {
     margin: 0;
     font-family: 'Inter', Arial, sans-serif;
@@ -6,14 +5,11 @@ body {
     color: #000;
 }
 
-/* СТРОГО КАК НА МАКЕТЕ */
 .container {
     width: 1240px;
     margin: 0 auto;
 }
 
-
-/* =============== HEADER =============== */
 .header {
     background: #142e43;
     padding: 28px 0;
@@ -79,13 +75,10 @@ body {
     color: white;
 }
 
-
-/* =============== HERO BLOCK =============== */
 .hero {
     background: #142e43;
     padding-top: 70px;
     height: 680px;
-    /* ЧТОБЫ ДЕВОЧКА ВЫСТУПАЛА ТОЧНО КАК НА МАКЕТЕ */
     position: relative;
 }
 
@@ -153,8 +146,6 @@ body {
     z-index: 1;
 }
 
-
-/* =============== PRODUCT =============== */
 .product {
     background: #f8f9fb;
     padding: 90px 0 60px;
@@ -183,7 +174,6 @@ body {
     border-radius: 12px;
 }
 
-/* FEATURES */
 .product-features {
     margin-top: 60px;
     display: grid;
@@ -213,7 +203,6 @@ body {
     line-height: 1.5;
 }
 
-/* ============ APPLICATION SECTION ============ */
 .application {
     background: #0f2a40;
     padding: 80px 0 160px;
@@ -227,7 +216,6 @@ body {
     align-items: flex-start;
 }
 
-/* LEFT TITLE */
 .app-title {
     font-size: 45px;
     font-family: 'Proxima', Arial, sans-serif;
@@ -236,7 +224,6 @@ body {
     margin-bottom: 40px;
 }
 
-/* GRID OF CARDS 2х3 */
 .app-grid {
     display: grid;
     grid-template-columns: repeat(2, 350px);
@@ -253,13 +240,11 @@ body {
     font-weight: 500;
 }
 
-/* RIGHT SIDE – CAROUSEL */
 .app-right {
     width: 433px;
     height: 319px;
     position: relative;
     margin-top: 70px;
-    /* <<< сдвиг вниз */
 }
 
 .carousel {
@@ -284,8 +269,6 @@ body {
     opacity: 1;
 }
 
-
-/* LEFT TRIANGLES */
 .left-triangles {
     position: absolute;
     width: 350px;
@@ -295,9 +278,7 @@ body {
     pointer-events: none;
 }
 
-/* ============ OFFER FORM SECTION ============ */
 .offer-form-section {
-
     padding: 40px 0 120px;
     color: white;
     margin-top: -200px;
@@ -310,10 +291,8 @@ body {
     font-family: 'Proxima', Arial, sans-serif;
     font-weight: 800;
     font-size: 30px;
-
 }
 
-/* FORM GRID */
 .offer-form {
     display: flex;
     justify-content: center;
@@ -321,7 +300,6 @@ body {
     gap: 28px;
 }
 
-/* FORM GROUP */
 .form-group {
     display: flex;
     flex-direction: column;
@@ -332,7 +310,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* INPUTS */
 .form-group input {
     width: 280px;
     padding: 14px 16px;
@@ -350,7 +327,6 @@ body {
     width: 280px;
 }
 
-
 .phone-input input {
     border: none;
     outline: none;
@@ -360,7 +336,6 @@ body {
     border-radius: 12px;
 }
 
-/* BUTTON */
 .offer-btn {
     background: #ff7a33;
     color: white;
@@ -371,7 +346,6 @@ body {
     height: 60px;
 }
 
-/* ============ PARTNERS SECTION ============ */
 .partners {
     background: #0f2a40;
     padding: 20px 0 120px;
@@ -409,7 +383,6 @@ body {
     margin-bottom: 18px;
 }
 
-/* LIST */
 .partners-list {
     list-style: disc;
     padding-left: 24px;
@@ -421,7 +394,6 @@ body {
     margin-bottom: 14px;
 }
 
-/* IMAGE */
 .partners-right img {
     width: 470px;
     border-radius: 18px;
@@ -429,7 +401,6 @@ body {
     margin-top: 20px;
 }
 
-/* ============ CLIENTS SECTION ============ */
 .clients {
     padding: 80px 0 110px;
 }
@@ -449,7 +420,6 @@ body {
     gap: 35px 35px;
 }
 
-/* CARD */
 .client-card {
     background: white;
     border-radius: 18px;
@@ -467,7 +437,6 @@ body {
     object-fit: contain;
 }
 
-/* ============ CTA BIG FORM ============ */
 .cta-big {
     padding: 60px 0 120px;
     display: flex;
@@ -505,7 +474,6 @@ body {
     margin-bottom: 40px;
 }
 
-/* FORM */
 .cta-form {
     display: flex;
     align-items: flex-end;
@@ -546,7 +514,6 @@ body {
     padding: 14px 8px;
 }
 
-/* BUTTON */
 .cta-btn {
     background: #ff7a33;
     color: white;
@@ -558,7 +525,6 @@ body {
     white-space: nowrap;
 }
 
-/* TRIANGLES IMAGE */
 .cta-triangles {
     position: absolute;
     right: 0;
@@ -570,9 +536,6 @@ body {
 .reviews-section {
     padding: 100px 0;
     background: #0E2A3B;
-}
-
-.reviews-section {
     position: relative;
 }
 
@@ -586,11 +549,9 @@ body {
     cursor: pointer;
 }
 
-/* Чтобы страница не выделяла текст при клике */
 .reviews-click-area:active {
     user-select: none;
 }
-
 
 .reviews-title {
     text-align: center;
@@ -655,8 +616,6 @@ body {
     display: block;
 }
 
-/* ===== Модалка ===== */
-
 .review-modal {
     position: fixed;
     inset: 0;
@@ -718,18 +677,16 @@ body {
 
 .contacts-right {
     position: relative;
-    width: 480px;              /* фиксированная опорная область */
+    width: 480px;
 }
 
 .contacts-right-content {
     position: relative;
     z-index: 3;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    margin-left: -40px;        /* ТОНКАЯ настройка сдвига влево */
+    margin-left: -40px;
 }
 
 .contacts-subtitle {
@@ -761,15 +718,12 @@ body {
 
 .triangles-right {
     position: absolute;
-    right: -140px;            /* выводим картинку за пределы блока */
+    right: -140px;
     top: -20px;
     width: 430px;
     pointer-events: none;
     z-index: 1;
 }
-
-
-/* footer */
 
 .footer {
     width: 85%;
@@ -806,10 +760,8 @@ body {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
-
     display: flex;
     justify-content: space-between;
-
     font-size: 20px;
     color: #333;
 }
