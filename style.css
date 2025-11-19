@@ -1397,7 +1397,6 @@ body {
         padding: 40px 0 30px;
     }
 
-    /* Перестраиваем 3 колонки в одну */
     .footer-flex {
         display: flex;
         flex-direction: column;
@@ -1413,7 +1412,6 @@ body {
         height: auto;
     }
 
-    /* Центр → вниз списка */
     .footer-center ul,
     .footer-right ul {
         list-style: none;
@@ -1435,13 +1433,10 @@ body {
         cursor: pointer;
     }
 
-    /* Перенос всего меню в одну колонку */
     .footer-center,
     .footer-right {
         margin-left: 0;
     }
-
-    /* Копирайт */
     .copyright {
         margin-top: 30px;
         text-align: left;
