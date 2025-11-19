@@ -1,0 +1,815 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f8f8f8;
+    color: #000;
+}
+
+/* СТРОГО КАК НА МАКЕТЕ */
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+
+/* =============== HEADER =============== */
+.header {
+    background: #142e43;
+    padding: 28px 0;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-block {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo {
+    width: 140px;
+}
+
+.logo-label {
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+}
+
+.nav a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.call-btn {
+    background: #ff7a33;
+    padding: 13px 26px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.email {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+}
+
+.phone {
+    font-size: 18px;
+    color: white;
+}
+
+
+/* =============== HERO BLOCK =============== */
+.hero {
+    background: #142e43;
+    padding-top: 70px;
+    height: 680px;
+    /* ЧТОБЫ ДЕВОЧКА ВЫСТУПАЛА ТОЧНО КАК НА МАКЕТЕ */
+    position: relative;
+}
+
+.hero-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-left {
+    width: 560px;
+    color: white;
+}
+
+.hero-title {
+    font-family: 'Proxima', Arial, sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0 0 26px 0;
+}
+
+.white-box {
+    background: white;
+    width: 555px;
+    border-radius: 12px;
+    padding: 20px 0;
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 26px;
+}
+
+.hero-desc {
+    font-size: 18px;
+    margin-bottom: 26px;
+}
+
+.orange-btn {
+    background: #ff7a33;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hero-right {
+    position: relative;
+    width: 480px;
+}
+
+.hero-girl {
+    position: absolute;
+    width: 710px;
+    bottom: -120px;
+    right: 0;
+    z-index: 2;
+}
+
+.hero-triangles {
+    position: absolute;
+    width: 620px;
+    right: -50px;
+    top: 120px;
+    z-index: 1;
+}
+
+
+/* =============== PRODUCT =============== */
+.product {
+    background: #f8f9fb;
+    padding: 90px 0 60px;
+}
+
+.product-title {
+    font-size: 42px;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+.product-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.product-text {
+    width: 58%;
+    font-size: 20px;
+    line-height: 1.55;
+}
+
+.product-image img {
+    width: 410px;
+    border-radius: 12px;
+}
+
+/* FEATURES */
+.product-features {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+}
+
+.feature-card {
+    background: white;
+    border: 2px solid #78a8d0;
+    border-radius: 16px;
+    padding: 28px 24px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.feature-card p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* ============ APPLICATION SECTION ============ */
+.application {
+    background: #0f2a40;
+    padding: 80px 0 160px;
+    position: relative;
+    overflow: hidden;
+}
+
+.application-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* LEFT TITLE */
+.app-title {
+    font-size: 45px;
+    font-family: 'Proxima', Arial, sans-serif;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* GRID OF CARDS 2х3 */
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    gap: 28px 40px;
+}
+
+.app-card {
+    background: white;
+    padding: 22px 24px;
+    border-radius: 16px;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #000;
+    font-weight: 500;
+}
+
+/* RIGHT SIDE – CAROUSEL */
+.app-right {
+    width: 433px;
+    height: 319px;
+    position: relative;
+    margin-top: 70px;
+    /* <<< сдвиг вниз */
+}
+
+.carousel {
+    width: 433px;
+    height: 319px;
+    position: relative;
+}
+
+.carousel-img {
+    width: 433px;
+    height: 319px;
+    object-fit: cover;
+    border-radius: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+
+.carousel-img.active {
+    opacity: 1;
+}
+
+
+/* LEFT TRIANGLES */
+.left-triangles {
+    position: absolute;
+    width: 350px;
+    bottom: -70px;
+    left: 80px;
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* ============ OFFER FORM SECTION ============ */
+.offer-form-section {
+
+    padding: 40px 0 120px;
+    color: white;
+    margin-top: -200px;
+    position: relative;
+    z-index: 2;
+}
+
+.offer-title {
+    text-align: center;
+    font-family: 'Proxima', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+
+}
+
+/* FORM GRID */
+.offer-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 28px;
+}
+
+/* FORM GROUP */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* INPUTS */
+.form-group input {
+    width: 280px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: none;
+    font-size: 18px;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    padding-left: 12px;
+    width: 280px;
+}
+
+
+.phone-input input {
+    border: none;
+    outline: none;
+    padding: 14px 0;
+    font-size: 18px;
+    flex-grow: 1;
+    border-radius: 12px;
+}
+
+/* BUTTON */
+.offer-btn {
+    background: #ff7a33;
+    color: white;
+    border: none;
+    padding: 16px 34px;
+    border-radius: 12px;
+    font-size: 20px;
+    height: 60px;
+}
+
+/* ============ PARTNERS SECTION ============ */
+.partners {
+    background: #0f2a40;
+    padding: 20px 0 120px;
+    color: white;
+}
+
+.partners-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.partners-left {
+    width: 55%;
+}
+
+.partners-title {
+    font-family: 'Proxima', Arial, sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1.15;
+    margin-bottom: 30px;
+}
+
+.partners-text {
+    font-size: 20px;
+    line-height: 1.55;
+    margin-bottom: 30px;
+}
+
+.partners-subtitle {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+/* LIST */
+.partners-list {
+    list-style: disc;
+    padding-left: 24px;
+    font-size: 20px;
+    line-height: 1.65;
+}
+
+.partners-list li {
+    margin-bottom: 14px;
+}
+
+/* IMAGE */
+.partners-right img {
+    width: 470px;
+    border-radius: 18px;
+    display: block;
+    margin-top: 20px;
+}
+
+/* ============ CLIENTS SECTION ============ */
+.clients {
+    padding: 80px 0 110px;
+}
+
+.clients-title {
+    text-align: center;
+    font-family: 'Proxima', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 42px;
+    margin-bottom: 60px;
+    color: #000;
+}
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px 35px;
+}
+
+/* CARD */
+.client-card {
+    background: white;
+    border-radius: 18px;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    transition: .2s ease;
+}
+
+.client-card img {
+    max-height: 70px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* ============ CTA BIG FORM ============ */
+.cta-big {
+    padding: 60px 0 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-inner {
+    background: #0f2a40;
+    width: 100%;
+    max-width: 1250px;
+    border-radius: 20px;
+    padding: 60px 70px 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-content {
+    width: 70%;
+}
+
+.cta-title {
+    font-size: 30px;
+    font-family: 'Proxima', Arial, sans-serif;
+    font-weight: 800;
+    line-height: 1.3;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.cta-subtitle {
+    font-size: 20px;
+    color: white;
+    opacity: 0.9;
+    line-height: 1.55;
+    margin-bottom: 40px;
+}
+
+/* FORM */
+.cta-form {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.cta-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-form label {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.cta-form input {
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: none;
+    width: 260px;
+    font-size: 18px;
+}
+
+.cta-form .phone-input {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    padding-left: 12px;
+}
+
+.cta-form .phone-input input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 14px 8px;
+}
+
+/* BUTTON */
+.cta-btn {
+    background: #ff7a33;
+    color: white;
+    border: none;
+    padding: 16px 34px;
+    font-size: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* TRIANGLES IMAGE */
+.cta-triangles {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 360px;
+    pointer-events: none;
+}
+
+.reviews-section {
+    padding: 100px 0;
+    background: #0E2A3B;
+}
+
+.reviews-section {
+    position: relative;
+}
+
+.reviews-click-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* Чтобы страница не выделяла текст при клике */
+.reviews-click-area:active {
+    user-select: none;
+}
+
+
+.reviews-title {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    margin-bottom: 60px;
+}
+
+.swiper {
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.swiper-slide {
+    width: 600px !important;
+}
+
+.review-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    height: auto;
+    min-height: 350px;
+}
+
+.review-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.review-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.review-name {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.review-position {
+    font-size: 17px;
+    color: #666;
+}
+
+.review-text {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #222;
+    overflow: hidden;
+}
+
+.dots {
+    font-size: 26px;
+    margin-top: 10px;
+    display: block;
+}
+
+/* ===== Модалка ===== */
+
+.review-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.review-modal-content {
+    background: #fff;
+    padding: 40px;
+    width: 700px;
+    border-radius: 14px;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.contacts {
+    background: #F7F7F7;
+    padding: 100px 0 40px;
+}
+
+.contacts-wrapper {
+    width: 85%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.contacts-title {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.contacts-city {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contacts-address,
+.contacts-email,
+.contacts-phone {
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.contacts-right {
+    position: relative;
+    width: 480px;              /* фиксированная опорная область */
+}
+
+.contacts-right-content {
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-left: -40px;        /* ТОНКАЯ настройка сдвига влево */
+}
+
+.contacts-subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.contacts-socials img {
+    width: 42px;
+    margin-right: 15px;
+}
+
+.contacts-btn {
+    margin-top: 30px;
+    padding: 18px 40px;
+    font-size: 24px;
+    border: none;
+    border-radius: 14px;
+    background: #FF7E47;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.contacts-btn:hover {
+    background: #ff6a28;
+}
+
+.triangles-right {
+    position: absolute;
+    right: -140px;            /* выводим картинку за пределы блока */
+    top: -20px;
+    width: 430px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+/* footer */
+
+.footer {
+    width: 85%;
+    max-width: 1400px;
+    margin: 80px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    width: 125px;
+    margin-right: 40px;
+}
+
+.footer-menu div {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.footer-right div {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.copyright {
+    margin-top: 40px;
+    width: 85%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 20px;
+    color: #333;
+}
