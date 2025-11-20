@@ -25,6 +25,13 @@ body {
     align-items: center;
 }
 
+.header-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .logo-block {
     display: flex;
     align-items: center;
@@ -855,6 +862,15 @@ body {
         gap: 10px;
     }
 
+    .header-top-row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+
     .header-top {
         width: 100%;
         display: flex;
@@ -874,9 +890,10 @@ body {
     .header-right {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
         text-align: right;
         gap: 3px;
+        width: 100%;
     }
 
     .call-btn {
@@ -923,7 +940,7 @@ body {
     }
 
     .hero-title {
-        font-size: 28px;
+        font-size: 30px;
         line-height: 1.25;
         margin: 0 0 16px 0;
     }
@@ -931,7 +948,7 @@ body {
     .white-box {
         width: 100%;
         padding: 16px 14px;
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 16px;
     }
 
@@ -1171,26 +1188,31 @@ body {
     }
 
     .client-card img {
-        max-height: 60px;
+        max-height: 50px;
         width: auto;
         object-fit: contain;
     }
 
 
+    .cta-content {
+        width: 100% ;
+    }
 
     .cta-big {
+        width: 90%;
+        max-width: 100%;
         padding: 40px 0 50px;
         display: flex;
         justify-content: center;
+        margin: 0 auto;
     }
 
     .cta-inner {
         width: 100%;
-        max-width: 340px;
-        /* ← УЗКАЯ ФОРМА КАК В ПРИМЕРЕ */
+        max-width: 500px;
+        margin: 0 auto;
         background: #0d293d;
-        border-radius: 24px;
-        padding: 28px 22px 34px;
+        padding: 32px 28px 40px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -1207,7 +1229,6 @@ body {
         font-size: 14px;
         line-height: 1.5;
         margin-bottom: 24px;
-        padding: 0 6px;
     }
 
     .cta-form {
@@ -1224,6 +1245,7 @@ body {
 
     .cta-form label {
         font-size: 14px;
+        width: 100%;
     }
 
     .cta-form input {
@@ -1406,7 +1428,6 @@ body {
         margin: 0 auto;
     }
 
-    /* Логотип */
     .footer-logo {
         width: 110px;
         height: auto;
@@ -1437,6 +1458,7 @@ body {
     .footer-right {
         margin-left: 0;
     }
+
     .copyright {
         margin-top: 30px;
         text-align: left;
